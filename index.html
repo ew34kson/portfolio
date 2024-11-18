@@ -10,7 +10,7 @@
 		
 		<!-- Bootstrap CSS (one version only) -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 		<style type="text/css">
 			table, th,td {
@@ -33,68 +33,99 @@
 	
 		<div class="container table-responsive" style="background-color: #ffffff;">
 			
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
-				<div class="container-fluid" >
-					<a class="navbar-brand" href="#"><b>Porfolio</b></a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarText">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Resume</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Pricing</a>
-						</li>
-						</ul>
-						<form class="d-flex" role="search">
-							<button class="btn btn-outline-success" type="submit">Download Resume</button>
-						</form>
-					</div>
+			<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#"><b>Portfolio</b></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="#" href="#">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#section_2">Development</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#section_3">Designs</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="resume.html">Resume</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+					  </li>
+					</ul>
+					<form class="d-flex" role="search">
+					  <a href="https://drive.google.com/file/d/1UuqKl3IiZjWnLA6DjUF0IYqtRcAUvWxc/view?usp=sharing" target="_blank">
+						<button class="btn btn-outline-success" type="button">Download Resume</button>
+					  </a>
+					</form>
+				  </div>
 				</div>
-			</nav>
+			  </nav>
+			  
+			  <style>
+				#navbar {
+				  transition: transform 0.3s ease-in-out; /* Smooth transition for transform property */
+				}
+			  
+				#navbar:hover {
+				  transform: translateY(-5px); /* Moves navbar 5px up when hovered */
+				}
+				
+				#navbar:not(:hover) {
+				  transform: translateY(0); /* Ensures the navbar goes back to its original position */
+				}
+			  </style>
 		
 			<!-- Your other content goes here -->
 			<hr>
-			<section class="about-section section-padding" id="section_2" >
+			<section class="about-section section-padding" id="section_1" >
 				<div class="container mt-0">
 					<br>
 					<div class="row">
 						<div class="col-lg-4 col-12">
 							<div class="about-text-wrap d-flex justify-content-center">
-								<img src="https://drive.google.com/thumbnail?id=1XOFHT7SY-0PJqwFbiOvUa-w7UV1SKiFN" class="about-image img-fluid" width="400" height="200">
+								<img src="https://drive.google.com/thumbnail?id=1dk7K-rouCl62zHF6LCxs1NNpiinOU-tl" class="about-image img-fluid" width="400" height="200">
 							</div>
 						</div>	
 						<div class="col-lg-8 col-12 mb-4 mb-lg-0 d-flex align-items-center text-center">
 							<div class="services-info">
 								<br>
 								<h3>Hi I'm</h3>
-								<h1>ERICKSON F. ANGELES</h1>
+								<h1><b>ERICKSON F. ANGELES</b></h1>
 								<p>I am an experienced IT with over 8 years in software development and IT infrastructure management. I specialize in creating efficient systems, including desktop applications, communication tools, and HR solutions. With strong problem-solving skills and a focus on delivering high-impact results, I aim to use my technical expertise to drive innovation and enhance organizational efficiency.</p>
+								<div class="text-box">
+									<a href="https://www.facebook.com/erickson.angeles.9/" target="_blank" class="icon"><i class="fab fa-facebook fa-3x"></i></a>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="https://www.instagram.com/ew34k" target="_blank" class="icon" ><i class="fab fa-instagram fa-3x"></i></a>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="https://x.com/Er1cksonAngeles" target="_blank" class="icon"><i class="fab fa-twitter fa-3x"></i></a>
+								</div>
 							</div>
 						</div>							
 					</div>
 					<br>
 				</div>
 			</section>
-			<hr>
-			<section class="development-section" id="section_1">
+			
+			<section class="development-section" id="section_2">
 				<div class="container mt-5">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<h1><b>PROJECTS AND DEVELOPMENT</b></h1>
+							<hr>
+							<h2>PROJECTS AND DEVELOPMENT</h2>
+							<hr>
 						</div>
 					</div>
 					<br>	
 					<div class="row">
 						<div class="col-sm-4 text-center">
-							<h4>Incoming Communication Management System (ICMS)</h4>
+							<h5>Incoming Communication Management System (ICMS)</h5>
 							<br>
-							<img src="https://drive.google.com/thumbnail?id=1XOFHT7SY-0PJqwFbiOvUa-w7UV1SKiFN" class="about-image img-fluid" width="400" height="200">
+							<img src="https://drive.google.com/thumbnail?id=1Ue1bf2vguRwDTmAOmL-VMmhghH7BNl9_" class="about-image img-fluid" width="400" height="200">
 							<br>
 							<br>
 							<p>Designed to streamline and organize all forms of communication received by an 
@@ -105,9 +136,9 @@
 								customer service and maintaining strong relationships with stakeholders.</p>
 						</div>
 						<div class="col-sm-4 text-center">
-							<h4>Cemetery Infomation Management System (CIMS)</h4>
+							<h5>Cemetery Infomation Management System (CIMS)</h5>
 							<br>
-							<img src="https://drive.google.com/thumbnail?id=1XOFHT7SY-0PJqwFbiOvUa-w7UV1SKiFN" class="about-image img-fluid" width="400" height="200">
+							<img src="https://drive.google.com/thumbnail?id=1Z8U9B0U6ysrjumqDOPvGCwCz5lFjq4lo" class="about-image img-fluid" width="400" height="200">
 							<br>
 							<br>
 							<p>An efficient solution for managing cemetery operations. It includes features for 
@@ -118,9 +149,9 @@
 								smooth operations and improved service for visitors.</p>
 						</div>
 						<div class="col-sm-4 text-center">
-							<h4>Sex Desigrated Community Base Management System (CBMS)</h4>
+							<h5>Sex Desigrated Community Base Management System (CBMS)</h5>
 							<br>
-							<img src="https://drive.google.com/thumbnail?id=1XOFHT7SY-0PJqwFbiOvUa-w7UV1SKiFN" class="about-image img-fluid" width="400" height="200">
+							<img src="https://drive.google.com/thumbnail?id=1nC0y4cfwcF-5EDQ9gDebf4QDd73a505m" class="about-image img-fluid" width="400" height="200">
 							<br>
 							<br>
 							<p>A software solution designed to monitor and manage the residents of a 
@@ -135,9 +166,78 @@
 				<div class="container mt-5">
 					<div class="row">
 						<div class="col-sm-4 text-center">
-							<h4>Incoming Communication Management System (ICMS)</h4>
+							<h5>Human Resource Information Management System (HRIMS)</h5>
 							<br>
-							<img src="https://drive.google.com/thumbnail?id=1XOFHT7SY-0PJqwFbiOvUa-w7UV1SKiFN" class="about-image img-fluid" width="400" height="200">
+							<img src="https://drive.google.com/thumbnail?id=1K9J6pN3Edy3R-DJ5AwcpnHUjJ3llThB6" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>Designed to streamline and manage an organization’s human resource processes.
+								It centralizes employee data, including recruitment, onboarding, performance 
+							   management, payroll, and benefits administration. By automating these 
+							   functions, HRIMS enhances efficiency, improves data accuracy, and provides 
+							   valuable insights through reporting and analytics.</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							<h5>Business Permint Issuance System (BPIS)</h5>
+							<br>
+							<img src="https://drive.google.com/thumbnail?id=1cq-PCZYSnYD1XCseCfQ3qNWP1p1UaXbw" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>The Business Permit Issuance System (BPIS) is an advanced plugin designed to integrate seamlessly with the existing Local Government Unit 
+								(LGU) Baras system. It automates the issuance of business permits, sanitary permits, and barangay business clearances, 
+								streamlining local government operations.</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							<h5>San Francisco Parish School Batch 2004 Alumni Website</h5>
+							<br>
+							<img src="https://drive.google.com/thumbnail?id=1YEFWwLDeboviRXv7dQ9Gs7VhmmZv-KUS" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>A website serves as a central hub for information regarding the homecoming event.  It features a 
+								welcoming homepage with event details, an agenda of activities, and registration options for attendees. 
+								The site highlights the significance of the gathering, allows alumni to connect, and showcases memories 
+								through galleries. With easy navigation and engaging content, this website fosters community and excitement 
+								among alumni, ensuring a memorable reunion experience.</p>
+						</div>
+					</div>
+				</div>
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-sm-4 text-center">
+							<h5>Single For Christ Mobile Apps (SFC Apps)</h5>
+							<br>
+							<img src="https://drive.google.com/thumbnail?id=1V1Fl8v50xkMUHG4ebWoXVs5viQz48rYw" class="about-image img-fluid" width="150" height="150">
+							<br>
+							<br>
+							<p>The Single For Christ Mobile App (SFC App) is designed for new members of the Single For Christ Cardona Chapter. 
+								It provides easy access to essential resources, including a Rosary guide, 80 song lyrics, service guides, teachings, and the Covenant of SFC. 
+								This app helps members deepen their faith, engage in worship, and actively participate in the community, all from a single platform.</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							
+						</div>
+						<div class="col-sm-4 text-center">
+							
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<section class="layout-section" id="section_3"></section>
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<hr>
+							<h2>LAYOUTS AND DESIGN</h2>
+							<hr>
+						</div>
+					</div>
+					<br>	
+					<div class="row">
+						<div class="col-sm-4 text-center">
+							<h5>Incoming Communication Management System (ICMS)</h5>
+							<br>
+							<img src="https://drive.google.com/thumbnail?id=1Ue1bf2vguRwDTmAOmL-VMmhghH7BNl9_" class="about-image img-fluid" width="400" height="200">
 							<br>
 							<br>
 							<p>Designed to streamline and organize all forms of communication received by an 
@@ -148,9 +248,9 @@
 								customer service and maintaining strong relationships with stakeholders.</p>
 						</div>
 						<div class="col-sm-4 text-center">
-							<h4>Cemetery Infomation Management System (CIMS)</h4>
+							<h5>Cemetery Infomation Management System (CIMS)</h5>
 							<br>
-							<img src="https://drive.google.com/thumbnail?id=1XOFHT7SY-0PJqwFbiOvUa-w7UV1SKiFN" class="about-image img-fluid" width="400" height="200">
+							<img src="https://drive.google.com/thumbnail?id=1Z8U9B0U6ysrjumqDOPvGCwCz5lFjq4lo" class="about-image img-fluid" width="400" height="200">
 							<br>
 							<br>
 							<p>An efficient solution for managing cemetery operations. It includes features for 
@@ -161,9 +261,9 @@
 								smooth operations and improved service for visitors.</p>
 						</div>
 						<div class="col-sm-4 text-center">
-							<h4>Sex Desigrated Community Base Management System (CBMS)</h4>
+							<h5>Sex Desigrated Community Base Management System (CBMS)</h5>
 							<br>
-							<img src="https://drive.google.com/thumbnail?id=1XOFHT7SY-0PJqwFbiOvUa-w7UV1SKiFN" class="about-image img-fluid" width="400" height="200">
+							<img src="https://drive.google.com/thumbnail?id=1nC0y4cfwcF-5EDQ9gDebf4QDd73a505m" class="about-image img-fluid" width="400" height="200">
 							<br>
 							<br>
 							<p>A software solution designed to monitor and manage the residents of a 
@@ -176,7 +276,6 @@
 					</div>
 				</div>
 			</section>
-			<hr>
 		</div>
 
 	
