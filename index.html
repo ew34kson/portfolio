@@ -1,74 +1,187 @@
-<!DOCTYPE html>
-<html> 
+<!doctype html>
+<html lang="en">
+
+
 	<head> 
-		<title>Activity #3</title>
+		<title>Portfolio</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Vincent Musa">
+		<meta name="keywords" content="Computer, Electronic Device">
+		
+		<!-- Bootstrap CSS (one version only) -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+
 		<style type="text/css">
 			table, th,td {
 				text-align: center;
 			}
+
+			
 		</style>
-		<meta charset="UTF-8">
-		<meta name="author" content="Vincent Musa">
-		<meta name="keywords" content="Computer, Electronic Device">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- .about-section {
+			background-image: url('images/edward-unsplash-blur.jpg');
+			background-color: #704010;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		} -->
+		
 	</head> 
-	<body> 
-		<div class="container table-responsive">
-			<div class="row text-center text-muted">
-				<h1>CONTACT LISTING FORM</h1>
-			</div>
-			<div class="row text-center text-primary">
-				<h2><b>Contact Information</b></h2>
-			</div>
-			<div class="row">
-				<table class="table table-hover  table-borderless table-striped">
-					<thead>
-						<tr class="text-center table-primary">
-							<th>#</th>
-							<th>Last Name</th>
-							<th>First Name</th>
-							<th>Sex (M/F)</th>
-							<th>Age</th>
-							<th>Contact #</th>
-						</tr>
-					</thead>
-						<tr class="text-center">
-							<td>1</td>
-							<td>Angeles</td>
-							<td>Erickson</td>
-							<td>M</td>
-							<td>23</td>
-							<td>09266095171</td>
-						</tr>
-						<tr class="text-center">
-							<td>2</td>
-							<td>Angeles</td>
-							<td>Madonna</td>
-							<td>F</td>
-							<td>20</td>
-							<td>09266095171</td>
-						</tr>
-						<tr class="text-center">
-							<td>3</td>
-							<td>Angeles</td>
-							<td>Steven Cire</td>
-							<td>M</td>
-							<td>3</td>
-							<td>09266095171</td>
-						</tr>
-						<tr class="text-center">
-							<td>4</td>
-							<td>Angeles</td>
-							<td>Roby Cire</td>
-							<td>M</td>
-							<td>1</td>
-							<td>09266095171</td>
-						</tr>
-					<tbody>
-					</tbody>
-				</table>
-			</div>
+	<body style="background-color: #c4c4c4;">  
+	
+		<div class="container table-responsive" style="background-color: #ffffff;">
+			
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid" >
+					<a class="navbar-brand" href="#"><b>Porfolio</b></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarText">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Pricing</a>
+						</li>
+						</ul>
+						<form class="d-flex" role="search">
+							<button class="btn btn-outline-success" type="submit">Download Resume</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		
+			<!-- Your other content goes here -->
+			<hr>
+			<section class="about-section section-padding" id="section_2" >
+				<div class="container mt-0">
+					<br>
+					<div class="row">
+						<div class="col-lg-4 col-12">
+							<div class="about-text-wrap d-flex justify-content-center">
+								<img src="picture.jpg" class="about-image img-fluid" width="400" height="200">
+							</div>
+						</div>	
+						<div class="col-lg-8 col-12 mb-4 mb-lg-0 d-flex align-items-center text-center">
+							<div class="services-info">
+								<br>
+								<h3>Hi I'm</h3>
+								<h1>ERICKSON F. ANGELES</h1>
+								<p>I am an experienced IT with over 8 years in software development and IT infrastructure management. I specialize in creating efficient systems, including desktop applications, communication tools, and HR solutions. With strong problem-solving skills and a focus on delivering high-impact results, I aim to use my technical expertise to drive innovation and enhance organizational efficiency.</p>
+							</div>
+						</div>							
+					</div>
+					<br>
+				</div>
+			</section>
+			<hr>
+			<section class="development-section" id="section_1">
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h1><b>PROJECTS AND DEVELOPMENT</b></h1>
+						</div>
+					</div>
+					<br>	
+					<div class="row">
+						<div class="col-sm-4 text-center">
+							<h4>Incoming Communication Management System (ICMS)</h4>
+							<br>
+							<img src="picture.jpg" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>Designed to streamline and organize all forms of communication received by an 
+								organization. This system captures emails, messages, and physical mail, 
+								categorizing them for easy access and tracking. It ensures timely responses, 
+								enhances collaboration among team members, and maintains a comprehensive 
+								log of interactions for future reference. The system is crucial for improving 
+								customer service and maintaining strong relationships with stakeholders.</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							<h4>Cemetery Infomation Management System (CIMS)</h4>
+							<br>
+							<img src="picture.jpg" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>An efficient solution for managing cemetery operations. It includes features for 
+								tracking plots, burials, and maintenance activities, as well as managing 
+								reservations and sales. The system enables staff to maintain accurate records and 
+								provides families with access to information about their loved ones. Additionally, it 
+								offers tools for managing financial transactions and generating reports, ensuring 
+								smooth operations and improved service for visitors.</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							<h4>Sex Desigrated Community Base Management System (CBMS)</h4>
+							<br>
+							<img src="picture.jpg" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>A software solution designed to monitor and manage the residents of a 
+								specific housing community, with a focus on demographic details such as sex/gender 
+								composition and household structure. This system collects and organizes data related 
+								to the composition of households, allowing local authorities or housing administrators 
+								to better understand the needs of the community, allocate resources efficiently, and make 
+								informed decisions regarding community services and infrastructure. </p>
+						</div>
+					</div>
+				</div>
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-sm-4 text-center">
+							<h4>Incoming Communication Management System (ICMS)</h4>
+							<br>
+							<img src="picture.jpg" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>Designed to streamline and organize all forms of communication received by an 
+								organization. This system captures emails, messages, and physical mail, 
+								categorizing them for easy access and tracking. It ensures timely responses, 
+								enhances collaboration among team members, and maintains a comprehensive 
+								log of interactions for future reference. The system is crucial for improving 
+								customer service and maintaining strong relationships with stakeholders.</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							<h4>Cemetery Infomation Management System (CIMS)</h4>
+							<br>
+							<img src="picture.jpg" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>An efficient solution for managing cemetery operations. It includes features for 
+								tracking plots, burials, and maintenance activities, as well as managing 
+								reservations and sales. The system enables staff to maintain accurate records and 
+								provides families with access to information about their loved ones. Additionally, it 
+								offers tools for managing financial transactions and generating reports, ensuring 
+								smooth operations and improved service for visitors.</p>
+						</div>
+						<div class="col-sm-4 text-center">
+							<h4>Sex Desigrated Community Base Management System (CBMS)</h4>
+							<br>
+							<img src="picture.jpg" class="about-image img-fluid" width="400" height="200">
+							<br>
+							<br>
+							<p>A software solution designed to monitor and manage the residents of a 
+								specific housing community, with a focus on demographic details such as sex/gender 
+								composition and household structure. This system collects and organizes data related 
+								to the composition of households, allowing local authorities or housing administrators 
+								to better understand the needs of the community, allocate resources efficiently, and make 
+								informed decisions regarding community services and infrastructure. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr>
 		</div>
-	</body> 
+
+	
+		<!-- Bootstrap Bundle JS (includes Popper.js and Bootstrap JS) -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+
 </html>
