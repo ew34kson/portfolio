@@ -34,7 +34,7 @@
 		<div class="container table-responsive" style="background-color: #ffffff;">
 			
 			<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
-				<div class="container-fluid">
+				<div class="container">
 				  <a class="navbar-brand" href="#"><b>Portfolio</b></a>
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -68,15 +68,16 @@
 			  
 			  <style>
 				#navbar {
-				  transition: transform 0.3s ease-in-out; /* Smooth transition for transform property */
+				  position: fixed; /* Make the navbar fixed at the top */
+				  top: 0; /* Place it at the top of the page */
+				  left: 0; /* Align it to the left of the viewport */
+				  width: 100%; /* Make it span the entire width */
+				  z-index: 9999; /* Ensure it's above other content */
+				  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 				}
 			  
-				#navbar:hover {
-				  transform: translateY(-5px); /* Moves navbar 5px up when hovered */
-				}
-				
-				#navbar:not(:hover) {
-				  transform: translateY(0); /* Ensures the navbar goes back to its original position */
+				body {
+				  padding-top: 70px; /* Add top padding to body so content isn't hidden behind the navbar */
 				}
 			  </style>
 		
